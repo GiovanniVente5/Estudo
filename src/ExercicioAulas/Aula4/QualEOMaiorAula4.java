@@ -1,4 +1,4 @@
-package ExercicioAulas;
+package ExercicioAulas.Aula4;
 
 import javax.swing.JOptionPane;
 
