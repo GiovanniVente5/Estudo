@@ -1,5 +1,4 @@
 package ExercicioAulas.Aula5;
-import ExercicioAulas.Classes.Carro;
 
 public class Corrida {
     public static void main(String[] args) {

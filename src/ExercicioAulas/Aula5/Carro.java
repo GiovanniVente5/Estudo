@@ -1,4 +1,4 @@
-package ExercicioAulas.Classes;
+package ExercicioAulas.Aula5;
 
 public class Carro {
     private String marca;
