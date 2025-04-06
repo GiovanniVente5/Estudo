@@ -1,6 +1,6 @@
 package ExercicioAulas.Aula5;
 
-import ExercicioAulas.Aula4.Produto;
+import ExercicioAulas.Aula4.Classes.Produto;
 
 public class GerenciamentoEstoque {
     public static void main(String[] args) {

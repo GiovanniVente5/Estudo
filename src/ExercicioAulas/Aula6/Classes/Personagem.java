@@ -1,10 +1,22 @@
-package ExercicioAulas.Aula6;
+package ExercicioAulas.Aula6.Classes;
+
+import javax.swing.JOptionPane;
 
 public class Personagem {
     private String nome = "";
     private int energia = 10;
     private int fome = 0;
     private int sono = 0;
+    private int experiencia = 0;
+
+    @Override
+    public String toString(){
+        return  "EXP: " + getExperiencia() + 
+                "\nNome: " + getNome() +
+                "\nEnergia: " + getEnergia() +
+                "\nFome: " + getFome() +
+                "\nSono: " + getSono();
+    }
 
     public Personagem(String nome, int energia, int fome, int sono) {
         this.nome = nome;
@@ -39,11 +51,13 @@ public class Personagem {
     }
 
     public void cacar() {
-        if (energia > 2) {
+        if (energia > 1) {
             System.out.println(nome + " esta caçando.");
+            experiencia = Math.min(experiencia + 1, 10);
             energia -= 2;
         } else {
             System.out.println(nome + " esta muito cansado.");
+            JOptionPane.showMessageDialog(null, "Está muito cançado para caçar!", nome, energia);
         }
         fome = Math.min(fome + 1, 10);
         sono = Math.min(sono + 1, 10);
@@ -79,6 +93,14 @@ public class Personagem {
 
     public void setSono(int sono) {
         this.sono = sono;
+    }
+
+    public int getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
     }
 
 }

@@ -1,4 +1,4 @@
-package ExercicioAulas.Aula4;
+package ExercicioAulas.Aula4.Classes;
 
 public class Produto {
     private String nome;

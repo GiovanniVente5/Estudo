@@ -1,5 +1,7 @@
 package ExercicioAulas.Aula5;
 
+import ExercicioAulas.Aula5.Classes.Carro;
+
 public class Corrida {
     public static void main(String[] args) {
         Carro fusca = new Carro("Volskwagen","Typ 1",0);
