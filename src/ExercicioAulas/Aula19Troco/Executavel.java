@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Executavel {
     public static void main(String[] args) {
+        //valores a ser pago e o valor pago
         double pagar = Double.parseDouble(JOptionPane.showInputDialog("Valor a ser pago:"));
         double pago = Double.parseDouble(JOptionPane.showInputDialog("Valor Pago:"));
         CalcularTroco calc = new CalcularTroco();

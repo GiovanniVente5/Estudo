@@ -20,6 +20,7 @@ public class CalcularTroco {
     private int cent10;
     private int cent5;
 
+    //Método que calcula quantidade de notas a serem entregas como troco
     public void Troco(double pago, double pagar) {
         troco = pago - pagar;
         troco2 = pago - pagar;
@@ -84,7 +85,7 @@ public class CalcularTroco {
         }
     }
 
-    // Método para retornar apenas os atributos com valor diferente de zero
+    // Método para retornar apenas os atributos com valor diferente de zero em uma String
     public String Trocado() {
         StringBuilder sb = new StringBuilder();
         sb.append("Valor a ser pago: ").append(pagar);
